@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.js';
+import '../App.css';
 import JSONDATA from "../MOCK_DATA.json";
 import { useState } from "react";
 
