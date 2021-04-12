@@ -29,7 +29,7 @@ function Navbar() {
       )}
       {loggedIn === true && (
         <>
-        <NavLink to='/customer' activeStyle>Customers</NavLink>
+        <NavLink to='/editor' activeStyle>Editor</NavLink>
         <NavBtn>
           <LogOutBtn />
         </NavBtn>
