@@ -17,6 +17,13 @@ body{
   background-color: #14171A;
   float:left;
 }
+.Image{
+  margin-left: 25px;
+}
+.Userid{
+  margin-left:25px;
+  color:#1DA1F2;
+}
 .SidebarList{
   height: 100%;
   padding: 0;

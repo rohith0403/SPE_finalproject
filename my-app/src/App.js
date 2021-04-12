@@ -1,29 +1,13 @@
 import './App.css';
 import Sidebar from "./Components/Sidebar";
-import JSONDATA from "./MOCK_DATA.json";
-import {useState} from "react";
+import Search from "./Components/Search";
 
 
 function App() {
-  const [searchTerm,setSearchTerm]=useState("")
   return (
     <div className="App">
-    <Sidebar />
-    <input class="input" type="text"
-     placeholder="Search for the book here ......." 
-     onChange={event =>{setSearchTerm(event.target.value)}}/>
-    {JSONDATA.filter((val)=>{
-      if(searchTerm==""){
-        return 
-      }
-      else if(val.title.toLowerCase().includes(searchTerm.toLowerCase())){
-        return val
-      }
-    }).map((val,key) => {
-      return <div className="title" key={key}>
-      <p>{val.title}</p>
-      </div>
-    })}
+      <Sidebar />
+      <Search/>
     </div>
   );
 }
