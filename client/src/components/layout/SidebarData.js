@@ -1,29 +1,41 @@
 import React from 'react';
-import HomeIcon from '@material-ui/icons/Home';
+// import HomeIcon from '@material-ui/icons/Home';
 import CategoryIcon from '@material-ui/icons/Category';
 import CreateIcon from '@material-ui/icons/Create';
 import BookIcon from '@material-ui/icons/Book';
-
+import * as AiIcons from 'react-icons/ai';
+import {CgLogOut} from 'react-icons/cg'
+import LogOutBtn from '../auth/LogOutBtn';
 export const SidebarData=[
     {
         title: 'Home',
-        icon: <HomeIcon/>,
-        link:"/home"
+        path: '/dashboard',
+        icon: <AiIcons.AiFillHome />,
+        cName: 'nav-text'
     },
     {
         title: 'Browse',
         icon: <CategoryIcon/>,
-        link: "/browse"
+        link: "/browse",
+        cName: 'nav-text'
     },
     {
         title: 'Reading',
         icon: <BookIcon/>,
-        link: "/reading"
+        link: "/reading",
+        cName: 'nav-text'
+
     },
     {
-        title: 'Writing',
+        title: 'Editor',
+        path: "/editor",
         icon: <CreateIcon />,
-        link: "/writing"
+        cName: 'nav-text'
+    },
+    {
+        title: <LogOutBtn/> ,
+        icon: <CgLogOut/>,
+        cName: 'nav-text'
     }
 ]
 

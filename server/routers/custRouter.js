@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Customer = require("../models/custModel");
 const auth = require("../middleware/auth");
 
-router.post("/", auth, async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const { name } = req.body;
 
@@ -19,7 +19,7 @@ router.post("/", auth, async (req, res) => {
   }
 });
 
-router.get("/", auth, async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const customers = await Customer.find();
     res.json(customers);

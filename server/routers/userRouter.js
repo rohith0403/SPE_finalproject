@@ -54,8 +54,7 @@ router.post("/", async (req, res) => {
         
         res.cookie("token", token, {
             httpOnly: true,
-            
-        }).send();
+        }).send(savedUser);
 
         
 
@@ -105,7 +104,7 @@ router.post("/login", async (req, res) => {
         res.cookie("token", token, {
             httpOnly: true,
             
-        }).send();
+        }).send(existingUser._id);
     }
     catch(err){
         console.log(err);
