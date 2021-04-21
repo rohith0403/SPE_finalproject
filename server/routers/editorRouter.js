@@ -6,12 +6,19 @@ const EditorContent = require("../models/contentModel")
 router.post("/", async (req, res) => {
     try {
         
-        let getContent = await EditorContent.findOne({userId:req.body.userId});  
+        let getContent = await EditorContent.findOne({userId:req.body.userId});
+        console.log("Get content is " + getContent);
         if(getContent){
-           await EditorContent.findOneAndUpdate({userId:req.body.userId}, req.body, {
+            console.log("boohoo");
+           const updatedContent = await EditorContent.findOneAndUpdate({userId:req.body.userId}, req.body, 
+            {
                 new: true,
                 runValidators: true,
-            })
+                returnOriginal:false
+            }
+            )
+            await updatedContent.save();
+            console.log("boohoo" + updatedContent.content + "  sdfsf " + req.body.content);
         }
         else{
             // const {userId,content}=req.body;
@@ -30,8 +37,16 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
     try {
-              const editorContent = await EditorContent.findOne({userId:req.body.userId});
-              res.json(editorContent.content);
+        console.log("userId is "+ req.query.userId);
+        const editorContent = await EditorContent.findOne({userId:req.query.userId});
+        console.log("editor content is " + editorContent);
+        if(editorContent === null){
+            res.status(200).send()
+        }
+        else{
+            console.log("asdasdad");
+            res.json(editorContent.content);
+        }
     } catch (err) {
         console.log(err);
         res.status(500).send();        

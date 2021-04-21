@@ -1,10 +1,11 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import {Editor, EditorState, RichUtils, convertToRaw, convertFromRaw, getDefaultKeyBinding} from 'draft-js';
+import {Editor, EditorState, ContentState, RichUtils, convertToRaw, convertFromRaw, getDefaultKeyBinding} from 'draft-js';
 import 'draft-js/dist/Draft.css';
 import "./MyEditor.css"
 import debounce from 'lodash/debounce';
 import axios from 'axios';
+import {userId} from '../auth/Login';
 class MyEditor extends React.Component {
   constructor(props) {
     super(props);
@@ -23,25 +24,25 @@ class MyEditor extends React.Component {
     this.toggleInlineStyle = this._toggleInlineStyle.bind(this);
   }
   saveContent = debounce((content) => {
-    axios.post('http://localhost:5000/editor', {
-      method: 'POST',
-      body: JSON.stringify({
-        userId:"",
-        content: convertToRaw(content),
-      }),
-      headers: new Headers({
-        'Content-Type': 'application/json'
-      })
-    })
+    let blocks = convertToRaw(content).blocks;
+    const value = blocks.map(block => (!block.text.trim() && '\n') || block.text).join('\n');
+    let data = JSON.stringify({
+      userId : userId,
+      content: value,
+  });
+  console.log(data);
+    axios.post('http://localhost:5000/editor', data, {headers:{"Content-Type" : "application/json"}})
   }, 1000);
 
   
   componentDidMount() {
-    axios.get('http://localhost:5000/editor',{userId:""})
+    console.log("userId is " + userId);
+    axios.get('http://localhost:5000/editor?userId=60728b993f6657603c92e907',{userId: userId})
     .then((response) => {
-      console.log(response.data);
+      console.log("response data is " + response.data);
+      // var ContentState = this.state.ContentState;
       if (response.data) {
-        this.setState({ editorState: EditorState.createWithContent(response.data) })
+        this.setState({ editorState: EditorState.createWithContent(ContentState.createFromText(response.data))})
       } else {
         this.setState({ editorState: EditorState.createEmpty() });
       }
