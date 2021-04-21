@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import JSONDATA from "../MOCK_DATA.json";
+import JSONDATA from "../BOOK_DATA.json";
 import { useState } from "react";
 
 function Search(){

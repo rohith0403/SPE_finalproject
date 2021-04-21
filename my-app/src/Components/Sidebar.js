@@ -7,8 +7,8 @@ function Sidebar(){
     return(
         <div className="Sidebar">
             <div className="Image">
-                <img src="Image.jpg"></img>
-                <div class="Userid">Image</div>
+                <img src="person.jpg"></img>
+                <div class="Userid">User 1</div>
             </div>
             <ul className="SidebarList">
                 {SidebarData.map((val,key)=>{
