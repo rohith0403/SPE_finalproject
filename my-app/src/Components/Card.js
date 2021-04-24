@@ -7,7 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
     root: {
@@ -26,7 +25,7 @@ const useStyles = makeStyles({
         border: "10px solid var(--blue)",
         transition: "350ms ease -in -out",
         "&:hover" :{
-            border: "1px solid",
+            // border: "1px solid",
             transform: "scale(1.02)",
             boxShadow:"#1DA1F2 2px 5px 10px",
         },
@@ -42,6 +41,9 @@ const useStyles = makeStyles({
     },
     text:{
         color:"#1DA1F2",
+        // whiteSpace: "nowrap",
+        // width:"300px",
+        
     },
     button:{
         color:"white",
@@ -66,7 +68,7 @@ export default function ImgMediaCard(props) {
                 <CardMedia className={classes.image}
                     component="img"
                     alt={props.title}
-                    image={"http://books.google.com/books/content?id=72aHpwAACAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE73aS5LTAH_tDpwPWo6_FLYOn5xEQKdOrlYF0BtjIw8A5uyuH2ezdW8XYRVCWTWTEtlLMl_qDhDS-7hYXv1E6jzt3QpkFp4rymtj94Tsu7Z22XoBJs6BG9jSpk-OqBzkybNnh5ac&source=gbs_api"}
+                    image={props.img}
                     title={props.tile}
                 />
                 <CardContent>
@@ -76,7 +78,7 @@ export default function ImgMediaCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button className={classes.button} size="small">
+                <Button className={classes.button} size="small" >
                     Read
                 </Button>
             </CardActions>
