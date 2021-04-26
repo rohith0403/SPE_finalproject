@@ -6,11 +6,11 @@ import BookIcon from '@material-ui/icons/Book';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 export const SidebarData=[
-    {
-        title: 'Home',
-        icon: <HomeIcon/>,
-        link:"/home"
-    },
+    // {
+    //     title: 'Home',
+    //     icon: <HomeIcon/>,
+    //     link:"/home"
+    // },
     // {
     //     title: 'Browse',
     //     icon: <CategoryIcon/>,

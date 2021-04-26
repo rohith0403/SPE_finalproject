@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     root: {
         width: "290px",
-        height: "auto",
+        height: "350px",
         // boxShadow: "#dfdfdf 2px 2px 5px",
         borderRadius: "var(--rounded)",
         padding: "0em",
@@ -27,11 +27,11 @@ const useStyles = makeStyles({
         "&:hover" :{
             // border: "1px solid",
             transform: "scale(1.02)",
-            boxShadow:"#1DA1F2 2px 5px 10px",
+            boxShadow:"#1DA1F2 2px 2px 8px 4px",
         },
     },
     image: {
-        borderRadius: "var(--rounded)",
+        // borderRadius: "var(--rounded)",
         height: "200px",
         width:"auto",
         marginTop: "10px",
@@ -78,7 +78,7 @@ export default function ImgMediaCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button className={classes.button} size="small" >
+                <Button className={classes.button} size="small" onClick={event => window.open(props.link,"_blank")}>
                     Read
                 </Button>
             </CardActions>

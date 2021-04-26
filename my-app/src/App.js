@@ -8,7 +8,7 @@ import JSONDATA from "./BOOK_DATA.json";
 function App() {
   return (
     <div className="App">
-      {/* <Sidebar /> */}
+      <Sidebar />
       <Search/>
       {/* <div class="row">
         <div className="renderJson">

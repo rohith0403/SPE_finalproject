@@ -22,7 +22,7 @@ function Search(){
                 return (
                     <div class="column" key={key}>
                         {console.log(val.img)}
-                        <Card className="card" img={val.img} title={val.title} summary={val.summary} />
+                        <Card className="card" img={val.img} title={val.title} summary={val.summary} link={val.link} />
                     </div>
                 )
             })}
