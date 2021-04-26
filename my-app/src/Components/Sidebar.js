@@ -6,6 +6,10 @@ import {SidebarData} from "./SidebarData";
 function Sidebar(){
     return(
         <div className="Sidebar">
+            <div className="Image">
+                <img src="person.jpg"></img>
+                <div class="Userid">User 1</div>
+            </div>
             <ul className="SidebarList">
                 {SidebarData.map((val,key)=>{
                     return (
