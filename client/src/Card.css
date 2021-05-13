@@ -1,0 +1,52 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+}
+
+.Image {
+  margin-left: 25px;
+}
+
+.input {
+  float: center;
+  height: 2%;
+  margin: 20px;
+  margin-left: 350px;
+  padding: 1%;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.input::placeholder {
+  color: #1da1f2;
+}
+/* p {
+  float: center;
+  margin-left: 400px;
+  color: #1da1f2;
+} */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

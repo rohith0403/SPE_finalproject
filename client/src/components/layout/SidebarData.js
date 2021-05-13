@@ -22,7 +22,7 @@ export const SidebarData=[
     {
         title: 'Reading',
         icon: <BookIcon/>,
-        link: "/reading",
+        path: "/reading",
         cName: 'nav-text'
 
     },

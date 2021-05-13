@@ -1,6 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import {Editor, EditorState, ContentState, RichUtils, convertToRaw, convertFromRaw, getDefaultKeyBinding} from 'draft-js';
+import {Editor, EditorState, ContentState, RichUtils, convertToRaw, /*convertFromRaw* ,*/ getDefaultKeyBinding} from 'draft-js';
 import 'draft-js/dist/Draft.css';
 import "./MyEditor.css"
 import debounce from 'lodash/debounce';
@@ -37,7 +37,7 @@ class MyEditor extends React.Component {
   
   componentDidMount() {
     console.log("userId is " + userId);
-    axios.get('http://localhost:5000/editor?userId=60728b993f6657603c92e907',{userId: userId})
+    axios.get('http://localhost:5000/editor?userId=' + userId,{userId: userId})
     .then((response) => {
       console.log("response data is " + response.data);
       // var ContentState = this.state.ContentState;
@@ -130,6 +130,7 @@ class MyEditor extends React.Component {
             placeholder="Tell a story..."
             ref="editor"
             spellCheck={true}
+            // readOnly={true}
           />
         </div>
       </div>
