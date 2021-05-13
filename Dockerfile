@@ -25,16 +25,20 @@
 FROM node:10.16-alpine
 
 # Create App Directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir /app
+WORKDIR /app
 
 # Install Dependencies
-COPY server/package.json ./
+COPY server/package.json /app
 
-RUN npm install --silent
+RUN npm install 
 
 # Copy app source code
-COPY . .
+COPY server ./app
+
+# FROM nginx:1.17.1-alpine
+
+# COPY --from=build-step /app/build /usr/share/nginx/html
 
 # Exports
 EXPOSE 5000
