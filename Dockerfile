@@ -43,4 +43,4 @@ COPY server ./app
 # Exports
 EXPOSE 5000
 
-CMD ["npm","start"]
+CMD ["node","server.js"]
