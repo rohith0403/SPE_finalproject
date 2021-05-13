@@ -1,14 +1,13 @@
 import './App.css';
 import Sidebar from "./Components/Sidebar";
 import Search from "./Components/Search";
-import Card from "./Components/Card";
-import JSONDATA from "./BOOK_DATA.json";
+
 
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Search/>
       {/* <div class="row">
         <div className="renderJson">

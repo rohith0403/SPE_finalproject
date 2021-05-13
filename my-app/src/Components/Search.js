@@ -2,10 +2,15 @@ import React from 'react';
 import '../App.css';
 import JSONDATA from "../BOOK_DATA.json";
 import { useState } from "react";
-import Card from "./Card.js"
+import Card from "./Card.js";
+// import logger from "./logger.js"
+const logger=require("./logger.js");
+
+
+
 
 function Search(){
-    const [searchTerm, setSearchTerm] = useState("")
+    const [searchTerm, setSearchTerm] = useState("");
     return (
         <div className="Search">
             <input class="input" type="text"
@@ -21,7 +26,7 @@ function Search(){
             }).map((val, key) => {
                 return (
                     <div class="column" key={key}>
-                        {console.log(val.img)}
+                        logger.info("Searched for title ")
                         <Card className="card" img={val.img} title={val.title} summary={val.summary} link={val.link} />
                     </div>
                 )

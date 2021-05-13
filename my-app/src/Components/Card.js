@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+
 const useStyles = makeStyles({
     root: {
         width: "290px",
@@ -57,11 +58,19 @@ const useStyles = makeStyles({
 
     
 });
- 
 
 export default function ImgMediaCard(props) {
     const classes = useStyles();
-
+    // const log4js = require("log4js");
+    // log4js.configure({
+    //     appenders: {
+    //         fileAppender: { type: 'file', filename: '../../log/writer.log' }
+    //     },
+    //     categories: {
+    //         default: { appenders: ['fileAppender'], level: 'info' }
+    //     }
+    // })
+    // const logger = log4js.getLogger();
     return (
         <Card className={classes.root}>
             <CardActionArea >
@@ -78,8 +87,8 @@ export default function ImgMediaCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button className={classes.button} size="small" onClick={event => window.open(props.link,"_blank")}>
-                    Read
+                <Button className={classes.button} size="small" onClick={function(event){window.open(props.link, "_blank");}}>
+                    Read    
                 </Button>
             </CardActions>
         </Card>
