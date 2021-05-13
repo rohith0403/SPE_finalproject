@@ -29,7 +29,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install Dependencies
-COPY server/package*.json ./
+COPY server/package.json ./
 
 RUN npm install --silent
 
