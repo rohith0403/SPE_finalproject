@@ -29,18 +29,15 @@ RUN mkdir /app
 WORKDIR /app
 
 # Install Dependencies
-COPY server/package.json /app
+COPY ./server /app
+
+# COPY server/package.json /app
 
 RUN npm install 
 
 # Copy app source code
-COPY server ./app
-
-# FROM nginx:1.17.1-alpine
-
-# COPY --from=build-step /app/build /usr/share/nginx/html
 
 # Exports
-EXPOSE 5000
+# EXPOSE 5000
 
 CMD ["node","server.js"]
