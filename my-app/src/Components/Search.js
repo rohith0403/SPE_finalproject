@@ -3,8 +3,7 @@ import '../App.css';
 import JSONDATA from "../BOOK_DATA.json";
 import { useState } from "react";
 import Card from "./Card.js";
-var log4js = require("log4js");
-var logger = log4js.getLogger();
+
 
 
 function Search(){
