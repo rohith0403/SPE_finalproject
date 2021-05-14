@@ -7,9 +7,9 @@ router.post("/", async (req, res) => {
     try {
         
         let getContent = await EditorContent.findOne({userId:req.body.userId});
-        console.log("Get content is " + getContent);
+        // console.log("Get content is " + getContent);
         if(getContent){
-            console.log("boohoo");
+            // console.log("boohoo");
            const updatedContent = await EditorContent.findOneAndUpdate({userId:req.body.userId}, req.body, 
             {
                 new: true,
@@ -18,7 +18,7 @@ router.post("/", async (req, res) => {
             }
             )
             await updatedContent.save();
-            console.log("boohoo" + updatedContent.content + "  sdfsf " + req.body.content);
+            // console.log("boohoo" + updatedContent.content + "  sdfsf " + req.body.content);
         }
         else{
             // const {userId,content}=req.body;
@@ -37,14 +37,14 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
     try {
-        console.log("userId is "+ req.query.userId);
+        // console.log("userId is "+ req.query.userId);
         const editorContent = await EditorContent.findOne({userId:req.query.userId});
-        console.log("editor content is " + editorContent);
+        // console.log("editor content is " + editorContent);
         if(editorContent === null){
             res.status(200).send()
         }
         else{
-            console.log("asdasdad");
+            // console.log("asdasdad");
             res.json(editorContent.content);
         }
     } catch (err) {

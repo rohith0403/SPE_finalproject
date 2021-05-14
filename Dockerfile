@@ -33,11 +33,11 @@ COPY ./server /app
 
 # COPY server/package.json /app
 
-RUN npm install 
+RUN npm install
 
 # Copy app source code
 
 # Exports
-# EXPOSE 5000
+EXPOSE 5000
 
-CMD ["node","server.js"]
+CMD ["npm","start"]
