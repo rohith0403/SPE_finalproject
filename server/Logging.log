@@ -15,3 +15,6 @@
 [2021-05-14T17:47:51.772] [INFO] Mylogger - Logged in rohith
 [2021-05-14T17:58:33.835] [INFO] Mylogger - Logged in rohith
 [2021-05-14T17:58:52.889] [ERROR] Mylogger - Wrong username or password
+[2021-05-14T22:53:52.220] [DEBUG] default - Some debug messages
+[2021-05-14T22:54:04.813] [ERROR] Mylogger - Please enter all required fields.
+[2021-05-14T22:54:14.917] [INFO] Mylogger - Logged in rohith
