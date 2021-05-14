@@ -30,15 +30,16 @@ function Search(){
 }
 
 export default Search*/
-
 import React from 'react';
-import '../Card.css';
+import '../App.css';
 import JSONDATA from "../BOOK_DATA.json";
 import { useState } from "react";
-import Card from "./Card.js"
+import Card from "./Card.js";
+
+
 
 function Search(){
-    const [searchTerm, setSearchTerm] = useState("")
+    const [searchTerm, setSearchTerm] = useState("");
     return (
         <div className="Search">
             <input class="input" type="text"
@@ -54,8 +55,7 @@ function Search(){
             }).map((val, key) => {
                 return (
                     <div class="column" key={key}>
-                        {console.log(val.img)}
-                        <Card className="card" img={val.img} title={val.title} summary={val.summary} />
+                        <Card className="card" img={val.img} title={val.title} summary={val.summary} link={val.link} />
                     </div>
                 )
             })}

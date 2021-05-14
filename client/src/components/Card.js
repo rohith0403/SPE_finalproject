@@ -7,11 +7,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import '../Card.css'
 
 const useStyles = makeStyles({
     root: {
         width: "290px",
-        height: "auto",
+        height: "350px",
         // boxShadow: "#dfdfdf 2px 2px 5px",
         borderRadius: "var(--rounded)",
         padding: "0em",
@@ -20,18 +21,18 @@ const useStyles = makeStyles({
         display: "grid",
         // marginTop: "80px",
         gridGap: "10px",
-        backgroundColor:"white",
+        backgroundColor:"black",
         // overflow: "hidden",
         border: "10px solid var(--blue)",
         transition: "350ms ease -in -out",
         "&:hover" :{
             // border: "1px solid",
             transform: "scale(1.02)",
-            boxShadow:"#1DA1F2 2px 5px 10px",
+            boxShadow:"#1DA1F2 2px 2px 8px 4px",
         },
     },
     image: {
-        borderRadius: "var(--rounded)",
+        // borderRadius: "var(--rounded)",
         height: "200px",
         width:"auto",
         marginTop: "10px",
@@ -57,11 +58,19 @@ const useStyles = makeStyles({
 
     
 });
- 
 
 export default function ImgMediaCard(props) {
     const classes = useStyles();
-
+    // const log4js = require("log4js");
+    // log4js.configure({
+    //     appenders: {
+    //         fileAppender: { type: 'file', filename: '../../log/writer.log' }
+    //     },
+    //     categories: {
+    //         default: { appenders: ['fileAppender'], level: 'info' }
+    //     }
+    // })
+    // const logger = log4js.getLogger();
     return (
         <Card className={classes.root}>
             <CardActionArea >
@@ -78,8 +87,8 @@ export default function ImgMediaCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button className={classes.button} size="small" >
-                    Read
+                <Button className={classes.button} size="small" onClick={function(event){window.open(props.link, "_blank");}}>
+                    Read    
                 </Button>
             </CardActions>
         </Card>
