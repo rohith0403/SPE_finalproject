@@ -38,6 +38,7 @@ RUN npm install
 # Copy app source code
 
 # Exports
-EXPOSE 5000
+# EXPOSE 5000
 
-CMD ["npm","start"]
+# CMD ["npm","start"]
+CMD ["npm","run","dev"]

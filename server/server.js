@@ -6,6 +6,7 @@ const cors = require("cors");
 const bodyParser = require('body-parser');
 const storage = require('node-persist');
 const path = require('path');
+var log4js = require("log4js");
 
 dotenv.config();
 
@@ -61,3 +62,8 @@ app.use(express.static(path.resolve(__dirname, 'build')));
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
   });
+
+// logging
+var logger = log4js.getLogger();
+logger.level = "debug";
+logger.debug("Some debug messages");
