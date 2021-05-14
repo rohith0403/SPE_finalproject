@@ -3,10 +3,8 @@ import '../App.css';
 import JSONDATA from "../BOOK_DATA.json";
 import { useState } from "react";
 import Card from "./Card.js";
-// import logger from "./logger.js"
-const logger=require("./logger.js");
-
-
+var log4js = require("log4js");
+var logger = log4js.getLogger();
 
 
 function Search(){
@@ -26,7 +24,6 @@ function Search(){
             }).map((val, key) => {
                 return (
                     <div class="column" key={key}>
-                        logger.info("Searched for title ")
                         <Card className="card" img={val.img} title={val.title} summary={val.summary} link={val.link} />
                     </div>
                 )
