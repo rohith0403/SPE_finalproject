@@ -3,6 +3,7 @@
     "start": "node app.js",
     "build": "cd ../client && npm install && npm run build",
     "test": "jest --verbose false --forceExit"
+    "dev": "nodemon ./server.js localhost 5000"
 
   },
   "dependencies": {
