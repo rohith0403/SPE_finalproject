@@ -10,7 +10,7 @@ var log4js = require("log4js");
 
 dotenv.config();
 
-const app = express();
+app = express();
 
 const PORT = 5000;
 
