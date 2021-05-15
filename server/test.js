@@ -67,11 +67,7 @@ describe('Testing editor', function () {
         done();
     });
     it('getEditor', async () => {
-        const response = await request(app).get('/editor?userId=' + userId).send({
-            username: "user",
-            location: "hyderabad",
-            experience: "very good service nice"
-        }).expect(200);
+        const response = await request(app).get('/editor?userId=' + userId).expect(200);
         //  console.log(token);
         //  expect(1).toBe(1);
 
