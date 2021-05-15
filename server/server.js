@@ -8,7 +8,7 @@ var log4js = require("log4js");
 
 
 
-dotenv.config();
+// dotenv.config();
 
 app = express();
 
