@@ -18,7 +18,18 @@ describe('Testing login', function () {
             password: "password"
         }).expect(200);
     });
-
+    it('return status code', async () => {
+        const response = await request(app).post('/auth/login').send({
+        username: "rohith",
+        password: "test"
+        }).expect(401);
+        });
+        it('return status code', async () => {
+        const response = await request(app).post('/auth/login').send({
+        username: "asdf",
+        password: "test123456"
+        }).expect(401);
+        });
 });
 
 //describe('Testing signup', function () {
@@ -84,6 +95,7 @@ describe('Testing editor', function () {
 
         //console.log("haha234");
     });
+    
 });
 
 

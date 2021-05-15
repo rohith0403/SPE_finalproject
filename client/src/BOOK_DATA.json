@@ -49,5 +49,12 @@
         "summary": "A Clash of Kings picks up the story where A Game of Thrones leaves off. The Seven Kingdoms are plagued by civil war, the Night's Watch mounts a reconnaissance force north of the Wall, and in the distant east, Daenerys Targaryen continues her quest to return to the Seven Kingdoms and claim her birthright.",
         "img": "http://books.google.com/books/content?id=kxc6jgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
         "link": "https://www.google.co.in/books/edition/Making_India_Awesome/kxc6jgEACAAJ?hl=en"
+    },
+    {
+        "title": "Making India Awesome",
+        "genres": "Drame|Thriller",
+        "summary": "",
+        "img":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOoAAADXCAMAAAAjrj0PAAAAbFBMVEX///8AAAChoaGenp6tra2SkpIODg62trZlZWXu7u78/PzS0tKIiIj19fXx8fHk5OR8fHzCwsLLy8vY2Ng2NjYnJydwcHBBQUFOTk7e3t5GRkZTU1NtbW0TExNdXV0ZGRkzMzOBgYG0tLSNjY1Kqql3AAADYklEQVR4nO3c61biMBRA4QYoSAWBAiIKKvr+7ziOOF6mp5JLaXLK/v7PWtkrAWKaTpYBAAAAAAAAAAAAAAAAAAAAAAAArVgObFyPP8Qeboi+cbLabO77g5nK5J5b6j/DeTnNsiL26J14pv71OIs9eDcBqcasl7GH7yIo1ZiJolUcmGqe9Kzi0FRjxlrmNTzVaJnXBlJN7AZLTaQ+xo6w00SqGcWusNJIqo4l3EzqIXaGjWZSjYb9fzX1dvRdfvXNpja1F7vDQjX1t1HPes9y6qa1AfurpvZ//wfjtdi6TH/P5JhaFFkxl1dw11LfSa1XLYw1kE9qIU1rN2c1Wwip6W/6vVKzVTX1+uxDDeWXKnxau5o6uZxU4cNKakJIPeGCUvNqald/V++qqWcfaTCv1Gm1dHX+oYZyT3374+ZQTZ10cw88q5aaRfdSC7lUwUfVY1a3UumklcGGcU0d76RSpSeGtcdoy+22fy+GajiDkFKH+6FIjjxKf6uUNXTkbbPriK+J1IfYEXaaSL2JHWGHp+ZOpUXyG6V3oalDDb+oR4Gph0u5t3S/jT18FwGpDzquQHzyTV33tXzxfvJJfZ73Va3cD+6puZrvof94zOrtNPag/VRT5+WizOdvbutahwtFPzFffv97dVkz6Tsl294fTp1CFPJ7DGuFi/j0gctNXau2NXwytchuHsVWFScP31kdo4mtplQ2r1apY/lgSdl+ye5wtPbzqonlObB0fUfHzcIvtkfe8n5Cw4XRT9an+3W3KPWwTl2KqUbRx9X+mc1ATFXxCOPI4fGU/Lxm0eZogzikyr84Rs0+wj61qF3Cas+Ba2e1yORnq1qWsNujZDF1rWNSHVPlTZOKF4qcLwjImyYd+37XNzL2UqqC+1mZ+7WPUpxWFY/NnS/zyEtYw/M459Tpk5Sq4W1d9yta8hIuWxltEI87huKLYgpu3nmkynvhvI3RBvG5Ofoitm5TP0D0uvr8IKXedTJVXsKD8482iNebjtlIbE38x9XvNQX5vH937sGG8Uwdi9Oa9l+unqnyt/D+zIMN45sqL+Gk77V7pwrv2pi0/yOB6kNx2z/IxG/hlJ/ilK/5T6/WG/deXjXReKHplLoT0XQXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASfkDaxsiIfCA3oUAAAAASUVORK5CYII=",
+        "link": "http://localhost:5000/editor?userId=60731c3a698101014882d0a7"
     }
 ]

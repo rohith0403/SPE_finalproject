@@ -7,7 +7,8 @@ import Sidebar from './components/layout/Sidebar';
 import Dashboard from './components/pages/Dashboard';
 // import MyEditor from './components/pages/MyEditor';
 import AuthContext from "./context/AuthContext";
-import PersistentEditor from "./components/pages/PersistentEditor";
+// import PersistentEditor from "./components/pages/PersistentEditor";
+import Editor from "./components/pages/Editor";
 import ReadonlyEditor from "./components/pages/ReadonlyEditor"
 
 function Router() {
@@ -27,7 +28,7 @@ function Router() {
         {loggedIn === true && (
             <>
             <Route path="/dashboard"component = {Dashboard}></Route>
-            <Route path="/editor" component = {PersistentEditor}></Route>
+            <Route path="/editor" component = {Editor}></Route>
             <Route path="/reading" component = {ReadonlyEditor}></Route>
             </>
         )}

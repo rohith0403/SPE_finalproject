@@ -40,3 +40,35 @@
 [2021-05-15T17:00:16.751] [INFO] Mylogger - logged out 
 [2021-05-15T17:00:31.971] [INFO] Mylogger - Logged in rohith
 [2021-05-15T17:00:40.894] [INFO] Mylogger - logged out 
+[2021-05-15T18:04:10.164] [INFO] Mylogger - Logged in rohith
+[2021-05-15T18:12:24.882] [INFO] Mylogger - logged out 
+[2021-05-15T18:12:29.914] [INFO] Mylogger - Logged in rohith
+[2021-05-15T19:00:20.762] [INFO] Mylogger - logged out 
+[2021-05-15T19:00:26.294] [INFO] Mylogger - Logged in rohith
+[2021-05-15T19:04:46.279] [INFO] Mylogger - logged out 
+[2021-05-15T19:04:51.933] [INFO] Mylogger - Logged in rohith
+[2021-05-15T19:05:25.108] [INFO] Mylogger - logged out 
+[2021-05-15T19:05:29.268] [INFO] Mylogger - Logged in rohith
+[2021-05-15T19:10:39.639] [INFO] Mylogger - logged out 
+[2021-05-15T19:10:47.527] [ERROR] Mylogger - rohiiith user does not exist
+[2021-05-15T19:11:02.120] [ERROR] Mylogger - Wrong password for rohith
+[2021-05-15T19:11:14.327] [ERROR] Mylogger - username already exists rohith
+[2021-05-15T19:11:30.004] [ERROR] Mylogger - Please enter a password of at least 6 characters.
+[2021-05-15T19:11:46.108] [INFO] Mylogger - Logged in rohith
+[2021-05-15T20:29:06.277] [INFO] Mylogger - logged out 
+[2021-05-15T20:29:09.600] [INFO] Mylogger - logged out 
+[2021-05-15T20:29:23.630] [INFO] Mylogger - logged out 
+[2021-05-15T20:30:05.968] [INFO] Mylogger - logged out 
+[2021-05-15T20:32:20.238] [INFO] Mylogger - Logged in rohith
+[2021-05-15T20:32:20.562] [ERROR] Mylogger - Wrong password for rohith
+[2021-05-15T20:32:20.812] [ERROR] Mylogger - asdf user does not exist
+[2021-05-15T20:32:21.143] [INFO] Mylogger - Logged in rohith
+[2021-05-15T20:32:21.702] [INFO] Mylogger - Logged in rohith
+[2021-05-15T20:36:00.029] [ERROR] Mylogger - Wrong password for rohith
+[2021-05-15T20:36:17.245] [INFO] Mylogger - Logged in rohith
+[2021-05-15T20:36:20.488] [INFO] Mylogger - logged out 
+[2021-05-15T20:36:26.613] [INFO] Mylogger - Logged in rohith
+[2021-05-15T20:36:29.077] [INFO] Mylogger - logged out 
+[2021-05-15T20:36:34.767] [ERROR] Mylogger - rohit user does not exist
+[2021-05-15T20:36:53.182] [INFO] Mylogger - Logged in rohith
+[2021-05-15T20:36:58.890] [INFO] Mylogger - logged out 

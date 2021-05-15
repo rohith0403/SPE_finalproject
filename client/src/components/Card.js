@@ -91,6 +91,9 @@ export default function ImgMediaCard(props) {
                 <Button className={classes.button} size="small" onClick={function(event){window.open(props.link, "_blank");}}>
                     Read    
                 </Button>
+                <Button className={classes.button} size="small" onClick=''>
+                    View    
+                </Button>
             </CardActions>
         </Card>
         
