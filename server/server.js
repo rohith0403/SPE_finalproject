@@ -67,7 +67,3 @@ app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
   });
 
-// logging
-var logger = log4js.getLogger();
-logger.level = "debug";
-logger.debug("Some debug messages");
