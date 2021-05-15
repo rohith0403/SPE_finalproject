@@ -9,7 +9,7 @@ log4js.configure({
 });
 
 const logger = log4js.getLogger("Mylogger");
-
+const alert = require("alert");
 // register
 
 router.post("/", async (req, res) => {
@@ -19,8 +19,8 @@ router.post("/", async (req, res) => {
         const{username, password} = req.body;
 
         if (!username || !password){
-            logger.error("Please enter all required fields.")
-            alert("Please enter all fields")
+            logger.error("Please enter all required fields.");
+            alert("Please enter all required fields.");
             return res
                 .status(400)
                 .json({ errorMessage: "Please enter all required fields." });
@@ -29,6 +29,7 @@ router.post("/", async (req, res) => {
   
         if (password.length < 6){
             logger.error("Please enter a password of at least 6 characters.")
+            alert("Please enter a password of at least 6 characters.")
             return res.status(400).json({
             errorMessage: "Please enter a password of at least 6 characters.",
             });
@@ -36,6 +37,7 @@ router.post("/", async (req, res) => {
         const existingUser = await User.findOne({ username });
         if (existingUser){
             logger.error("username already exists "+username)
+            alert("An account with this username already exists.")
             return res.status(400).json({
             errorMessage: "An account with this username already exists.",
             });
@@ -88,6 +90,7 @@ router.post("/login", async (req, res) => {
         
         // validate
         if (!username || !password){
+            alert("Please enter all required fields.")
             logger.error("Please enter all required fields.")
         return res
           .status(400)
@@ -96,6 +99,7 @@ router.post("/login", async (req, res) => {
         const existingUser = await User.findOne({ username });
         if (!existingUser){
             logger.error(username +" user does not exist")
+            alert("Wrong username or password!!!")
             return res.status(401).json({
             errorMessage: "Wrong username or password!!!",
             });
@@ -103,6 +107,7 @@ router.post("/login", async (req, res) => {
         const passwordCorrect = await bcrypt.compare(password, existingUser.passwordHash);
         if (!passwordCorrect){
             logger.error("Wrong password for "+username)
+            alert("Wrong username or password!!!")
             return res.status(401).json({
             errorMessage: "Wrong username or password!!!",
             });

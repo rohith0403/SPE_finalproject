@@ -1,0 +1,28 @@
+[2021-05-15T05:53:10.023] [DEBUG] default - Some debug messages
+[2021-05-15T05:53:42.276] [INFO] Mylogger - logged out 
+[2021-05-15T05:53:58.780] [INFO] Mylogger - Logged in anish
+[2021-05-15T05:54:47.889] [INFO] Mylogger - logged out 
+[2021-05-15T05:54:58.742] [ERROR] Mylogger - Wrong password for anish
+[2021-05-15T05:55:14.100] [ERROR] Mylogger - kripkee user does not exist
+[2021-05-15T05:55:28.532] [ERROR] Mylogger - username already exists anish
+[2021-05-15T05:55:37.265] [ERROR] Mylogger - Please enter a password of at least 6 characters.
+[2021-05-15T05:55:43.675] [ERROR] Mylogger - Please enter all required fields.
+[2021-05-15T05:56:00.815] [ERROR] Mylogger - Please enter all required fields.
+[2021-05-15T05:56:11.850] [INFO] Mylogger - Logged in Himesh
+[2021-05-15T05:56:35.321] [INFO] Mylogger - logged out 
+[2021-05-15T05:59:59.078] [DEBUG] default - Some debug messages
+[2021-05-15T06:00:30.551] [DEBUG] default - Some debug messages
+[2021-05-15T06:01:13.421] [ERROR] Mylogger - Kripkee user does not exist
+[2021-05-15T06:05:27.549] [DEBUG] default - Some debug messages
+[2021-05-15T06:06:33.478] [DEBUG] default - Some debug messages
+[2021-05-15T06:08:20.995] [INFO] Mylogger - Logged in anish
+[2021-05-15T06:08:28.015] [INFO] Mylogger - logged out 
+[2021-05-15T06:08:33.608] [ERROR] Mylogger - kripkee user does not exist
+[2021-05-15T06:08:55.855] [ERROR] Mylogger - kripkee user does not exist
+[2021-05-15T06:09:08.800] [DEBUG] default - Some debug messages
+[2021-05-15T06:09:54.149] [ERROR] Mylogger - lolpushparaju user does not exist
+[2021-05-15T06:12:18.740] [DEBUG] default - Some debug messages
+[2021-05-15T06:12:58.076] [ERROR] Mylogger - Wrong password for Himesh
+[2021-05-15T06:13:09.303] [ERROR] Mylogger - Please enter a password of at least 6 characters.
+[2021-05-15T06:13:24.658] [INFO] Mylogger - Logged in anish
+[2021-05-15T06:13:28.052] [INFO] Mylogger - logged out 
