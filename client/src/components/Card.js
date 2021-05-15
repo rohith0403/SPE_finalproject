@@ -17,6 +17,7 @@ const useStyles = makeStyles({
         borderRadius: "var(--rounded)",
         padding: "0em",
         marginLeft:"20px",
+        marginbelow:"20px",
         lineHeight: "1.5em",
         display: "grid",
         // marginTop: "80px",
