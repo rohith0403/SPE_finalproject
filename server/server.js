@@ -19,11 +19,11 @@ var log4js = require("log4js");
 
 app.listen(PORT, () => console.log(`server started on port : ${PORT}`));
 
-// app.use(express.static(path.resolve(__dirname, 'build')));
+app.use(express.static(path.resolve(__dirname, 'build')));
 
 
-// // All other GET requests not handled before will return our React app
-// app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+// All other GET requests not handled before will return our React app
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 
-//   });
+  });
