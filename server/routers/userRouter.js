@@ -35,12 +35,12 @@ router.post("/", async (req, res) => {
         }
         const existingUser = await User.findOne({ username });
         if (existingUser){
-            logger.error("An account with this username already exists.")
+            logger.error("username already exists "+username)
             return res.status(400).json({
             errorMessage: "An account with this username already exists.",
             });
         }
-        
+        logger.info("logged in "+username);
         const salt = await bcrypt.genSalt();
         const passwordHash = await bcrypt.hash(password, salt);
 
@@ -95,19 +95,19 @@ router.post("/login", async (req, res) => {
         }    
         const existingUser = await User.findOne({ username });
         if (!existingUser){
-            logger.error("Wrong username or password")
+            logger.error(username +" user does not exist")
             return res.status(401).json({
             errorMessage: "Wrong username or password!!!",
             });
         }
         const passwordCorrect = await bcrypt.compare(password, existingUser.passwordHash);
         if (!passwordCorrect){
-            logger.error("Wrong username or password")
+            logger.error("Wrong password for "+username)
             return res.status(401).json({
             errorMessage: "Wrong username or password!!!",
             });
         }
-        console.log("Reached above looged in");
+        // console.log("Reached above looged in");
         logger.info("Logged in "+ username);
         // sign the token
 
@@ -132,6 +132,8 @@ router.post("/login", async (req, res) => {
 });
 
 router.get("/logout", (req, res) =>{
+    //need to add username it is showing error some how
+    logger.info("logged out ");
     res.cookie("token", "", {
         expires : new Date(0)
     })

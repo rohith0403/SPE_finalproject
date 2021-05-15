@@ -1,19 +1,29 @@
-[2021-05-14T17:11:36.488] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:11:45.844] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:16:11.067] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:16:35.771] [ERROR] Mylogger - Wrong username or password
-[2021-05-14T17:24:49.699] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:25:04.709] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:25:09.826] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:25:13.690] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:25:20.451] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:25:31.761] [ERROR] Mylogger - Please enter all required fields.
-[2021-05-14T17:27:34.604] [ERROR] Mylogger - Wrong username or password
-[2021-05-14T17:46:15.392] [ERROR] Mylogger - Wrong username or password
-[2021-05-14T17:47:20.601] [INFO] Mylogger - Logged in rohith
-[2021-05-14T17:47:39.762] [ERROR] Mylogger - Wrong username or password
-[2021-05-14T17:47:51.772] [INFO] Mylogger - Logged in rohith
-[2021-05-14T17:58:33.835] [INFO] Mylogger - Logged in rohith
-[2021-05-14T17:58:52.889] [ERROR] Mylogger - Wrong username or password
-[2021-05-14T20:02:16.652] [DEBUG] default - Some debug messages
-[2021-05-14T20:02:35.505] [INFO] Mylogger - Logged in rohith
+[2021-05-15T05:26:48.390] [ERROR] Mylogger - Rohith user does not exist
+[2021-05-15T05:27:10.360] [ERROR] Mylogger - Wrong password for himesh
+[2021-05-15T05:28:09.627] [INFO] Mylogger - Logged in Himesh
+[2021-05-15T05:30:34.186] [DEBUG] default - Some debug messages
+[2021-05-15T05:30:52.383] [INFO] Mylogger - Logged in Himesh
+[2021-05-15T05:31:09.501] [INFO] Mylogger - logged out undefined
+[2021-05-15T05:32:08.908] [DEBUG] default - Some debug messages
+[2021-05-15T05:32:20.740] [INFO] Mylogger - Logged in rohith
+[2021-05-15T05:32:30.599] [INFO] Mylogger - logged out undefined
+[2021-05-15T05:33:41.259] [DEBUG] default - Some debug messages
+[2021-05-15T05:33:53.024] [INFO] Mylogger - Logged in Himesh
+[2021-05-15T05:34:04.410] [INFO] Mylogger - logged out
+[2021-05-15T05:35:26.406] [DEBUG] default - Some debug messages
+[2021-05-15T05:35:36.838] [INFO] Mylogger - Logged in Himesh
+[2021-05-15T05:35:42.742] [INFO] Mylogger - logged out
+[2021-05-15T05:38:01.805] [DEBUG] default - Some debug messages
+[2021-05-15T05:38:36.206] [ERROR] Mylogger - anish user does not exist
+[2021-05-15T05:39:24.689] [ERROR] Mylogger - anish user does not exist
+[2021-05-15T05:40:19.752] [DEBUG] default - Some debug messages
+[2021-05-15T05:40:25.905] [ERROR] Mylogger - Please enter all required fields.
+[2021-05-15T05:41:21.182] [ERROR] Mylogger - username already exists Himesh
+[2021-05-15T05:42:02.684] [ERROR] Mylogger - Please enter a password of at least 6 characters.
+[2021-05-15T05:43:46.905] [DEBUG] default - Some debug messages
+[2021-05-15T05:44:01.605] [INFO] Mylogger - logged out 
+[2021-05-15T05:45:17.820] [INFO] Mylogger - logged in saikiran
+[2021-05-15T05:45:54.866] [INFO] Mylogger - logged out 
+[2021-05-15T05:46:35.039] [ERROR] Mylogger - Wrong password for anish
+[2021-05-15T05:47:01.968] [ERROR] Mylogger - Wrong password for anish
+[2021-05-15T05:47:13.128] [INFO] Mylogger - Logged in anish
