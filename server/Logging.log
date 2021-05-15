@@ -26,3 +26,7 @@
 [2021-05-15T06:13:09.303] [ERROR] Mylogger - Please enter a password of at least 6 characters.
 [2021-05-15T06:13:24.658] [INFO] Mylogger - Logged in anish
 [2021-05-15T06:13:28.052] [INFO] Mylogger - logged out 
+[2021-05-15T09:43:33.228] [ERROR] Mylogger - Wrong password for rohith
+[2021-05-15T10:08:49.209] [INFO] Mylogger - Logged in Himesh
+[2021-05-15T10:09:50.036] [INFO] Mylogger - logged out 
+[2021-05-15T10:10:02.794] [ERROR] Mylogger - Wrong password for anish
