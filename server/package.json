@@ -2,7 +2,7 @@
   "scripts": {
     "start": "node app.js",
     "build": "cd ../client && npm install && npm run build",
-    "test": "jest --watch --verbose false --forceExit"
+    "test": "jest --watchAll --verbose false --forceExit"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
