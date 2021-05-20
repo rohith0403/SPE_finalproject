@@ -4,6 +4,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import CreateIcon from '@material-ui/icons/Create';
 import BookIcon from '@material-ui/icons/Book';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 
 export const SidebarData=[
     // {
@@ -27,10 +28,15 @@ export const SidebarData=[
         link: "/writing"
     },
     {
+        title: 'Add Book',
+        icon: <LibraryBooksIcon />,
+        link: "/addbook"
+    },
+    {
         title:'Sign Out',
         icon: <ExitToAppIcon/>,
         link: "/signout"
-    },
+    }
 ]
 
 

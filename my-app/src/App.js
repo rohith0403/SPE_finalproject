@@ -7,7 +7,7 @@ import Search from "./Components/Search";
 function App() {
   return (
     <div className="App">
-      {/* <Sidebar /> */}
+      <Sidebar />
       <Search/>
       {/* <div class="row">
         <div className="renderJson">
