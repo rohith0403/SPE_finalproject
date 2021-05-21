@@ -5,7 +5,9 @@ import 'draft-js/dist/Draft.css';
 import "./MyEditor.css"
 import debounce from 'lodash/debounce';
 import axios from 'axios';
-import {userId} from '../auth/Login';
+import { connect } from "react-redux";
+// import {userId} from '../auth/Login';
+
 class MyEditor extends React.Component {
   constructor(props) {
     super(props);
@@ -27,7 +29,7 @@ class MyEditor extends React.Component {
     let blocks = convertToRaw(content).blocks;
     const value = blocks.map(block => (!block.text.trim() && '\n') || block.text).join('\n');
     let data = JSON.stringify({
-      userId : userId,
+      userId : this.props.userId,
       content: value,
   });
   console.log(data);
@@ -36,8 +38,8 @@ class MyEditor extends React.Component {
 
   
   componentDidMount() {
-    console.log("userId is " + userId);
-    axios.get('http://localhost:5000/editor?userId=' + userId,{userId: userId})
+    console.log("userId is " + this.props.userId);
+    axios.get('http://localhost:5000/editor?userId=' + this.props.userId,{userId: this.props.userId})
     .then((response) => {
       console.log("response data is " + response.data);
       // var ContentState = this.state.ContentState;
@@ -239,4 +241,12 @@ const InlineStyleControls = (props) => {
   );
 };
 
-export default MyEditor;
+
+const mapStateToProps = (state) => {
+  return {
+    userId: state.userDetails.value,
+  };
+};
+
+
+export default connect(mapStateToProps)(MyEditor);

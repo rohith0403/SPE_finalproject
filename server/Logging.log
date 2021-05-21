@@ -30,3 +30,59 @@
 [2021-05-15T10:08:49.209] [INFO] Mylogger - Logged in Himesh
 [2021-05-15T10:09:50.036] [INFO] Mylogger - logged out 
 [2021-05-15T10:10:02.794] [ERROR] Mylogger - Wrong password for anish
+[2021-05-20T16:27:14.247] [INFO] Mylogger - logged out 
+[2021-05-20T16:27:33.058] [INFO] Mylogger - logged out 
+[2021-05-20T16:28:49.012] [INFO] Mylogger - Logged in rohith
+[2021-05-20T16:51:29.756] [INFO] Mylogger - Logged in rohith
+[2021-05-20T16:52:35.477] [INFO] Mylogger - Logged in rohith
+[2021-05-20T16:53:35.402] [INFO] Mylogger - Logged in rohith
+[2021-05-20T16:54:40.118] [INFO] Mylogger - Logged in rohith
+[2021-05-20T17:05:25.375] [INFO] Mylogger - logged out 
+[2021-05-20T17:05:31.169] [INFO] Mylogger - Logged in rohith
+[2021-05-20T17:08:51.562] [INFO] Mylogger - logged out 
+[2021-05-20T17:08:59.240] [INFO] Mylogger - Logged in rohith
+[2021-05-20T17:22:51.832] [INFO] Mylogger - logged out 
+[2021-05-20T17:22:56.806] [INFO] Mylogger - Logged in rohith
+[2021-05-20T17:27:51.438] [INFO] Mylogger - logged out 
+[2021-05-20T17:28:00.518] [INFO] Mylogger - Logged in rohith
+[2021-05-20T17:30:07.797] [INFO] Mylogger - logged out 
+[2021-05-20T17:30:16.129] [INFO] Mylogger - Logged in rohith
+[2021-05-20T17:48:13.229] [INFO] Mylogger - logged out 
+[2021-05-20T17:48:18.837] [INFO] Mylogger - Logged in rohith
+[2021-05-20T17:49:31.963] [INFO] Mylogger - logged out 
+[2021-05-20T17:49:36.402] [INFO] Mylogger - Logged in rohith
+[2021-05-20T17:55:13.137] [INFO] Mylogger - logged out 
+[2021-05-20T17:55:27.610] [INFO] Mylogger - Logged in rohith
+[2021-05-20T18:08:13.454] [INFO] Mylogger - logged out 
+[2021-05-20T18:08:17.940] [INFO] Mylogger - Logged in rohith
+[2021-05-20T18:24:39.818] [INFO] Mylogger - logged out 
+[2021-05-20T18:24:44.648] [INFO] Mylogger - Logged in rohith
+[2021-05-20T18:31:58.776] [INFO] Mylogger - logged out 
+[2021-05-20T18:32:03.849] [INFO] Mylogger - Logged in rohith
+[2021-05-20T18:33:03.311] [INFO] Mylogger - logged out 
+[2021-05-20T18:33:21.668] [ERROR] Mylogger - saikiran user does not exist
+[2021-05-20T18:33:39.488] [ERROR] Mylogger - saikiran user does not exist
+[2021-05-20T18:33:57.702] [ERROR] Mylogger - anish user does not exist
+[2021-05-20T18:34:35.272] [INFO] Mylogger - logged in saikiran
+[2021-05-20T18:35:05.670] [INFO] Mylogger - logged out 
+[2021-05-20T18:35:10.589] [INFO] Mylogger - Logged in rohith
+[2021-05-20T18:35:41.203] [INFO] Mylogger - logged out 
+[2021-05-20T18:35:48.293] [INFO] Mylogger - Logged in saikiran
+[2021-05-20T18:37:06.800] [INFO] Mylogger - logged out 
+[2021-05-20T18:37:12.769] [INFO] Mylogger - Logged in rohith
+[2021-05-20T18:37:21.804] [INFO] Mylogger - logged out 
+[2021-05-20T18:37:26.989] [INFO] Mylogger - Logged in rohith
+[2021-05-20T18:40:35.035] [INFO] Mylogger - logged out 
+[2021-05-20T18:40:45.440] [INFO] Mylogger - Logged in saikiran
+[2021-05-20T18:40:54.022] [INFO] Mylogger - logged out 
+[2021-05-20T18:41:12.350] [ERROR] Mylogger - Please enter a password of at least 6 characters.
+[2021-05-20T18:41:33.048] [ERROR] Mylogger - username already exists saikiran
+[2021-05-20T18:42:10.712] [INFO] Mylogger - logged in temp
+[2021-05-20T18:48:08.553] [INFO] Mylogger - logged out 
+[2021-05-20T18:48:21.987] [INFO] Mylogger - logged in temp2
+[2021-05-20T18:49:02.373] [INFO] Mylogger - logged in temp3
+[2021-05-20T18:51:16.193] [INFO] Mylogger - Logged in saikiran
+[2021-05-20T18:56:01.591] [INFO] Mylogger - logged out 
+[2021-05-20T18:56:09.695] [INFO] Mylogger - Logged in rohith
+[2021-05-20T19:07:15.577] [INFO] Mylogger - logged out 
+[2021-05-20T19:07:21.159] [INFO] Mylogger - Logged in rohith

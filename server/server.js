@@ -47,7 +47,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(cors({
-    origin: ["http://localhost:5000"],
+    origin: ["http://localhost:3000"],
     credentials: true,
 }));
 
@@ -57,6 +57,7 @@ app.use(cors({
 app.use("/auth", require("./routers/userRouter"));
 app.use("/customer", require("./routers/custRouter"));
 app.use("/editor", require("./routers/editorRouter"));
+app.use("/books", require("./routers/booksRouter"));
 
 // Have Node serve the files for our built React app
 app.use(express.static(path.resolve(__dirname, 'build')));

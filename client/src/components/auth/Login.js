@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
-
-// import { Form, FormGroup, Input, Button } from 
-// 'reactstrap';
+import { useSelector, useDispatch } from "react-redux";
+import {
+ setValue
+} from "../../features/userSlice";
 import axios from 'axios';
 import "./Login.css";
 import AuthContext from "../../context/AuthContext";
@@ -13,7 +14,7 @@ export var userId;
 function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    
+    const dispatch = useDispatch();
     const { getLoggedIn } = useContext(AuthContext);
     
     const history = useHistory();
@@ -30,6 +31,8 @@ function Login() {
             await axios.post("http://localhost:5000/auth/login", loginData).then((resp)=>{
                 console.log(resp.data);
                 userId = resp.data;
+                dispatch(setValue(userId));
+                
             });
             getLoggedIn();
         } catch (err) {

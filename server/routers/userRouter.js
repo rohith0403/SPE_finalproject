@@ -3,6 +3,8 @@ const User = require ("../models/userModel");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const log4js = require("log4js");
+
+
 log4js.configure({
     appenders: { Mylogger: { type: "file", filename: "Logging.log" } },
     categories: { default: { appenders: ["Mylogger"], level: "INFO" }}
@@ -65,7 +67,7 @@ router.post("/", async (req, res) => {
         );
 
         console.log(token);
-        
+         
         // send the token in a HTTP-only cookie
         
         res.cookie("token", token, {
