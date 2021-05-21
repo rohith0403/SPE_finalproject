@@ -21,7 +21,7 @@ const useStyles = makeStyles({
         display: "grid",
         // marginTop: "80px",
         gridGap: "10px",
-        backgroundColor:"black",
+        backgroundColor:"white",
         // overflow: "hidden",
         border: "10px solid var(--blue)",
         transition: "350ms ease -in -out",
@@ -47,7 +47,7 @@ const useStyles = makeStyles({
         
     },
     button:{
-        color:"white",
+        color:"black",
         marginTop:"0px",
     },
     // card: {

@@ -35,8 +35,8 @@ function Register() {
 
     }
     return (
-        <div className = "body">
-        <Form className = "register-form" onSubmit={register}>
+        // <div className = "body">
+        /* <Form className = "register-form" onSubmit={register}>
             <h1 className = "text-center" style =  {{color : 'darksmoke'}}> Writer's site</h1>
             <h3 className = "text-center" style =  {{color : 'darksmoke'}}> Please register</h3>
             <FormGroup>
@@ -61,44 +61,33 @@ function Register() {
             <Link to="/login">
             <Button>Log in</Button>
             </Link>
-        </Form>
-    </div>
-    // <div className="base-container">
-    // <div className="header">Register</div>
-    // <div className="content">
-    // {/* <div className="image"> 
-    //     <img src={loginImg} />
-    // </div> */}
-    //     <div className="form" onSubmit={register}>
-    //         <div className="form-group">
-    //         <label htmlFor="username">Username</label>
-    //         <input 
-    //         type="text" 
-    //         name="username" 
-    //         placeholder="username"
-    //         onChange = {(e) => setUsername(e.target.value)}
-    //         value={username}
-    //         />
-    //         </div>
-    //         <div className="form-group">
-    //         <label htmlFor="password">Password</label>
-    //         <input 
-    //         type="password" 
-    //         name="password" 
-    //         placeholder="password" 
-    //         onChange = {(e) => setPassword(e.target.value)}
-    //         value={password}
-    //         />
-    //         </div>
-    //     </div>
-    //     </div>
-    //     <div className="footer">
-    //     <button type="button" className="btn" onClick={register}>
-    //         Register
-    //     </button>
-    //     </div>
-    // </div>
-)
-}
+        </Form> */
+        <div className="login">
+        <form className="login__form" onSubmit={register}>
+          <h1>Register here 🚪</h1>
+          <input
+            type="username"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="password"
+            value={password}
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type="submit" className="submit__btn">
+            Submit
+          </button>
+        <div className="text-center pt-3"> If you already have an account, sign in</div>
+         <Link to="/login">
+         <button type="submit" className="submit__btn">Log in</button>
+         </Link>
+
+        </form>
+      </div>
+    );
+    }
 
 export default Register;
