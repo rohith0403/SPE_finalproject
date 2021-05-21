@@ -9,6 +9,7 @@ import Dashboard from './components/pages/Dashboard';
 import AuthContext from "./context/AuthContext";
 import PersistentEditor from "./components/pages/PersistentEditor";
 import ReadonlyEditor from "./components/pages/ReadonlyEditor"
+import AddBook from './components/pages/AddBook';
 
 function Router() {
     const { loggedIn } = useContext(AuthContext);
@@ -29,6 +30,8 @@ function Router() {
             <Route path="/dashboard"component = {Dashboard}></Route>
             <Route path="/editor" component = {PersistentEditor}></Route>
             <Route path="/reading" component = {ReadonlyEditor}></Route>
+            <Route path="/newbook" component = {AddBook}></Route>
+
             </>
         )}
         </div>

@@ -6,6 +6,7 @@ import BookIcon from '@material-ui/icons/Book';
 import * as AiIcons from 'react-icons/ai';
 import {CgLogOut} from 'react-icons/cg'
 import LogOutBtn from '../auth/LogOutBtn';
+import AddIcon from '@material-ui/icons/Add';
 export const SidebarData=[
     {
         title: 'Home',
@@ -23,6 +24,13 @@ export const SidebarData=[
         title: 'Reading',
         icon: <BookIcon/>,
         path: "/reading",
+        cName: 'nav-text'
+
+    },
+    {
+        title: 'Add Book',
+        icon: <AddIcon/>,
+        path: "/newbook",
         cName: 'nav-text'
 
     },

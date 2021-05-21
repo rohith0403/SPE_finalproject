@@ -11,7 +11,8 @@ export const userSlice = createSlice({
       state.value = action.payload;
     },
     addBook: (state, action) => {
-      state.books.append(action.payload);
+      console.log(state.books);
+      state.books.push(action.payload);
     },
     getBooks: (state, action) => {
       state.books=action.payload;
